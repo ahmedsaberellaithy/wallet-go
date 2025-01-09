@@ -88,22 +88,22 @@ curl -X POST http://localhost:8080/users \
 curl http://localhost:8080/users/1
 ```
 
-## Development
+## Development Plan and To Do list
 
 ### Adding New Features
 
 1. Create new package under `pkg/`
 2. Add tests for new functionality
-3. Update migrations if needed
-4. Add API endpoints in `cmd/main.go`
+3. Update migrations if needed - to be running directly from the codebase later
+4. Add API endpoints in `cmd/main.go` - to be moved in controller layer
 
 ### Code Style
 
-- Follow Go standard formatting (`go fmt`)
-- Use interfaces for dependency injection
-- Write tests for new functionality
-- Document public functions and types
-
-```
-
-```
+- [ ] Ensure all code follows Go standard formatting using `go fmt`
+- [ ] Implement dependency injection using interfaces throughout the codebase
+- [ ] Write comprehensive tests for all new functionality
+- [ ] Add documentation for all public functions and types
+  - [ ] Use godoc format for comments
+  - [ ] Include usage examples where appropriate
+  - [ ] Document expected inputs and outputs
+  - [ ] Document any error conditions
